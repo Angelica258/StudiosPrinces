@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Angelik Bermudez, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Studio Pricess</title>
+</head>
+<body class="container">
+<div id="contenedorNav">
+    <header>
+        <nav class="navbar navbar-default" id="#myNavbar1">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1" name="button">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      </button>
+                    <a class="navbar-brand active" id="barra-titulo2" href="#">Bienvenido a Studio Princess</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="#" data-toggle="modal" data-target="#IniciarSesion"><i
+                                class=" icono fas fa-user"></i>Iniciar Sesion</a></li>
+                        <div class="modal fade" id="IniciarSesion" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">INICIAR SESION</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="control-label">Correo Electronico</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class=" icono fas fa-user"></i>
+                                                    </div>
+                                                    <input type="email" class="form-control"
+                                                           placeholder="studioprincess@info.co"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Contraseña</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fas fa-lock"></i></div>
+                                                    <input type="password" class="form-control" placeholder="********"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-info">Ingresar</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class=""><a href="#" data-toggle="modal" data-target="#registro"><i
+                                class="icono fas fa-address-card"></i></i>Registrarse</a></li>
+                        <div class="modal fade" id="registro" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">REGISTRO</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre Completo</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class=" icono fas fa-user"></i>
+                                                    </div>
+                                                    <input name="name" type="text" class="form-control"
+                                                           placeholder="Strudios Princess" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Correo Electronico</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fas fa-at"></i></div>
+                                                    <input type="email" class="form-control"
+                                                           placeholder="studioprincess@info.co" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Contraseña</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fas fa-lock"></i></div>
+                                                    <input type="text" class="form-control" placeholder="********"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Numero de Telefono</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fas fa-phone"></i></div>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="5776655" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Direccion de envios</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="calle 12E # 7 - 25 Quinta Oriental" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-info">Registrarse</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <img id="imgHeader" src="img/logo.png">
+        </div>
+
+        <div>
+
+            <nav class="navbar navbar-default" id="#myNavbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" name="button">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      </button>
+                        <a class="navbar-brand active" id="barra-titulo" href="#" data-seleccion="index"><i
+                                class="icono fas fa-home"></i>Studio
+                            Pricess</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"></i>
+                                MUJER<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <h5> CATEGORIAS</h5>
+                                    <li><a href="#" data-seleccion="Productos">Nueva Coleccion</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Blusas y Camisas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Sacos y Buzos</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Vestidos</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Faldas y Chaquetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Jean y Leggings</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">HOMBRE<span
+                                    class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <h5> CATEGORIAS</h5>
+                                    <li><a href="#" data-seleccion="Productos">Nueva Coleccion</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Camisas Polos y Camisetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Guayaberas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Chaquetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Sacos y Buzos</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Pantalones Bermudas y Jean</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Pijamas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NIÑAS<span
+                                    class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <h5> CATEGORIAS</h5>
+                                    <li><a href="#" data-seleccion="Productos">Nueva Coleccion</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Camisas y Camisetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Faldas y Vestidos</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Shorts</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Jean</a></li>
+                                    <li><a href="#" data-seleccion="Form-Auditorio">Chaquetas</a></li>
+                                    <li><a href="#" data-seleccion="Form-Auditorio">Pijamas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"></i>
+                                NIÑO<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <h5> CATEGORIAS</h5>
+                                    <li><a href="#" data-seleccion="Productos">Nueva Coleccion</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Camisas y Camisetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos"> Bermudas Jean y Pantalones</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Buzos y Chaquetas</a></li>
+                                    <li><a href="#" data-seleccion="Productos">Pijamas</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#" data-seleccion="Sale"><i class="icono fas fa-paper-plane"></i></i>
+                                SALE</a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Que estas Buscando?">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <li class=""><a href="#" data-seleccion="carrito"><i class="icono fas fa-shopping-cart"></i>Carrito</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
+<div id="contenedor2">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive" src="img/mama3.jpg">
+                        <div class="carousel-caption">
+                            <h3>Promo Dia Madre</h3>
+                            <p> descripcion promo</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="img/papa2.jpg">
+                        <div class="carousel-caption">
+                            <h3>Promo Dia Padre</h3>
+                            <p> descripcion promo</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="img/niños.jpg">
+                        <div class="carousel-caption">
+                            <h3>Promo Dia Chiquitines</h3>
+                            <p>descripcion promo</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="img/niñas2.jpg">
+                        <div class="carousel-caption">
+                            <h3>Promo baby</h3>
+                            <p>descripcion promo</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <ul class="nav nav-pills nav-justified">
+                    <li data-target="#myCarousel" data-slide-to="0"><a href="#" data-seleccion="productos">Mujeres
+                        <small>Promo Dia de la Madres</small>
+                    </a></li>
+                    <li data-target="#myCarousel" data-slide-to="1"><a href="#" data-seleccion="productos">Hombres
+                        <small>Promo dia del Padre</small>
+                    </a></li>
+                    <li data-target="#myCarousel" data-slide-to="2"><a href="#" data-seleccion="productos">Niños
+                        <small>Promo pa los chiquitines</small>
+                    </a></li>
+                    <li data-target="#myCarousel" data-slide-to="3"><a href="#" data-seleccion="productos">Niñas
+                        <small>Promo para las chiquitinas</small>
+                    </a></li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="carruselV">
+                <h5>ESPECIALES</h5>
+
+                <ul>
+                    <li>
+                        <div class="col-xs-6 col-sm-12 espacio">
+                            <a href=""><img class="peq" src="img/e1.jpg" alt=""  data-toggle="modal" data-target="#VerMas"></a>
+                            <a href="" data-seleccion=""  data-toggle="modal" data-target="#VerMas">Chaqueta en cuero Dama</a>
+                            <span>$150.00</span>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <div class="col-xs-6 col-sm-12 espacio">
+                            <a href=""><img class="peq" src="img/e2.jpg" alt=""></a>
+                            <a href="" data-seleccion="">Vestido de Fiesta Niña</a>
+                            <span>$80.000</span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="col-xs-6 col-sm-12 espacio">
+                            <a href=""><img class="peq" src="img/e3.jpg" alt=""></a>
+                            <a href="" data-seleccion="">blazer casual para hombre</a>
+                            <span>$140.000</span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="col-xs-6 col-sm-12 espacio">
+                            <a href=""><img class="peq" src="img/e4.jpg" alt=""></a>
+                            <a href="" data-seleccion="">nombreProducto</a>
+                            <span>$150.00</span>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button type="button" class=" col-xs-12 col-sm-12 btn btn-info">MOSTRAR MAS</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="contendorProductos">
+        <hr>
+        <div class="col-xs-12 col-sm-12">
+            <h4>PRODUCTOS DESTACADOS</h4>
+            <hr>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Vestidos Casuales Mujer</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p1.jpg"></a>
+                    <a href="" data-seleccion=""><p>Vestido Casuale Mujer</p></a>
+                    <p>Vestidos Casuales Elegantes Corto Entallado de Mujer Juvenil Salir de Fiesta</p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#VerMas">Ver Mas
+                        </button>
+
+                        <div class="modal fade"  role="dialog" id="VerMas">
+                            <div class="modal-dialog modal-lg" >
+                                <div class="modal-content" >
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h5 class="modal-title">Vestidos Casuales Mujer</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-xs-12 col-sm-4" >
+                                            <img src="img/p1.jpg">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8" id="decripModel">
+                                            <h4>Descripcion</h4>
+                                            <p>Vestido Casuale Mujer</p>
+                                            <h4>Material</h4>
+                                            <p>Vestidos Casuales Elegantes Corto Entallado de Mujer Juvenil Salir de Fiesta</p>
+
+                                            <div class="form-group">
+
+                                                <h4>Selecciona la Talla</h4>
+                                                <p>Para Verificar su talla, ver la Guia de tallas <a  data-seleccion="talla"></a></p>
+                                                <select name="talla" class="form-control">
+                                                    <option value="XS">XS</option>
+                                                    <option value="S">S</option>
+                                                    <option value="M">M</option>
+                                                    <option value="L">L</option>
+                                                    <option value="XL">XL</option>
+                                                </select>
+                                            </div>
+                                            <h4>Precio</h4>
+                                            <p>$150.00</p>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" value="0" min="1">
+                                            <button type="button" class="btn btn-primary"><i class="icono fas fa-cart-plus"></i>Añadir
+                                                al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#VerMas"><i class="fas fa-cart-plus"></i></button>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Vestido de fiesta</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p2.jpg"></a>
+                    <a href="" data-seleccion=""><p>Vestido de Fiesta Mujer</p></a>
+                    <p>Vestido de fiesta para boda del cordón de la envoltura elegante hasta la rodilla para mujer</p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Pantalon Cortos</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p3.jpg"></a>
+                    <a href="" data-seleccion=""><p>Pantalon Corto Mujer </p></a>
+                    <p>Pantalones de chándal cortos ocasionales del Joker de la moda de las mujeres</p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Falda Casual Mujer</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p4.jpg"></a>
+                    <a href="" data-seleccion=""><p>Falda Casual Mujer</p></a>
+                    <p>Falda otoño invierno modelo 2018 para Mujer, negro con lunares en Blanco toda ocacion </p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Jean Hombre</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p5.jpg"></a>
+                    <a href="" data-seleccion=""><p>Jean Chupin de hombre</p></a>
+                    <p>Jean Chupin Elastizado Azul Oscuro, con tela muy resistente, detalles de desgate model 2018 </p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Buzo Cuello Tortuga </strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p6.jpg"></a>
+                    <a href="" data-seleccion=""><p>Buzo Cuello Tortuga </p></a>
+                    <p>Camibuso Cuello Tortuga Gris Fashion Hombre Slim Polo Neck, tela suave modelo 2017</p>
+                    <p></p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Pijama Niña</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p7.jpg"></a>
+                    <a href="" data-seleccion=""><p>Pijama de niña Cotton Juice</p></a>
+                    <p>Pijama con estampado de unicornios multicolor formado por una camiseta de manga larga y cuello
+                        redondo. </p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <div class="col-xs-12 col-sm-3">
+                    <h5><strong>Camisa Niño</strong></h5>
+
+                    <a href="" data-seleccion=""><img src="img/p8.jpg"></a>
+                    <a href="" data-seleccion=""><p>Camisa niño mod. Cancan</p></a>
+                    <p>Camisa niño mod. Cancan - Nachete. Camisa con finas rayas en tono azul y blanco y topitos
+                        azules</p>
+                    <p>$150.00</p>
+                    <div class="botonesP">
+                        <button type="button" class="btn btn-info">Ver Mas</button>
+                        <div class="input-group ">
+                            <input type="number" class="form-control" value="0" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="col-xs-12 col-sm-12 botonDestacado btn btn-info">MOSTRAR MAS PRODUCTOS
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row" id="infoStudio">
+    <br>
+    <div class="col-xs-12 col-sm-3 ">
+        <h4>SOBRE STUDIOS PRINCESS</h4>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#" data-seleccion="misionV">MISIÓN Y VISIÓN</a></li>
+                <li><a href="#" data-seleccion="historia">NUESTRA HISTORIA</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <h4>UBICACION</h4>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="" data-seleccion="localizador">LOCALIZADOR DE LA TIENDA</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#contacto">CONTACTO</a></li>
+
+                <div class="modal fade" id="contacto" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">CONTACTO</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Nombre">Nombres</label>
+                                        <input type="text" class="form-control" id="Nombre" name="Nombre"
+                                               placeholder="Introduzca su nombre"
+                                               required="" autofocus="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                                        <select name="Motivo" class="form-control">
+                                            <option value="Sugerencia">Sugerencia</option>
+                                            <option value="Queja">Queja</option>
+                                            <option value="Reclamo">Reclamo</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Correo">Dirección de Correo
+                                            Electrónico</label>
+                                        <input type="email" class="form-control" id="Correo" name="Correo"
+                                               placeholder="Introduzca su correo electrónico" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Mensaje">Mensaje</label>
+                                        <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje"
+                                                  placeholder="Introduzca su mensaje" required=""></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-info" value="Enviar">
+                                        <input type="reset" class="btn btn-default" value="Limpiar">
+                                    </div>
+
+                                    <div id="respuesta" style="display: none;"></div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <h4>ATENCIÓN AL CLIENTE</h4>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="" data-seleccion="Preguntas">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="" data-seleccion="envios">ENVÍO Y DEVOLUCIONES</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <h4>POLITICAS</h4>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="" data-seleccion="terminos">TÉRMINOS Y CONDICIONES</a></li>
+                <li><a href="" data-seleccion="garantia">POLÍTICAS DE LA GARANTÍA</a></li>
+                <li><a href="" data-seleccion="pdatos">POLÍTICA DE DATOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12">
+        <h4>MEDIOS DE PAGO</h4>
+        <br>
+        <div id="mediosPago">
+            <img src="img/visa.png">
+            <img src="img/master.png">
+            <img src="img/pse.png">
+            <img src="img/baloto.png">
+            <img src="img/efecty.png">
+        </div>
+        <br>
+    </div>
+
+    <br>
+</div>
+<hr>
+<footer class="row" id="footer">
+
+    <div class="redes col-xs-12 col-sm-12">
+        <h4>Redes sociales</h4>
+        <a href="https://www.facebook.com/Studios-Princess-367011760311231/" target="_blank "><i
+                class=" iconos fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="iconos fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i
+                class=" iconos fab fa-instagram"></i></a>
+        <h4>© Copyright 2018. Todos los derechos reservados- UFPS</h4>
+    </div>
+
+</footer>
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNVkndvZtfW9WZ_NySzK5Mu7i2uZ8ftCE&language=ar&region=EG"></script>
+</body>
+
+</html>
